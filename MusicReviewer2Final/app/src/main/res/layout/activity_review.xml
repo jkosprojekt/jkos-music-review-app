@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        tools:context=".DetailActivity">
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="10/10"
+            android:textSize="40dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/artist_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="20dp"
+            android:text="WYKONAWCA" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artist_text_view"
+            android:padding="16dp"
+            android:textSize="20dp"
+            android:text="TYTUL" />
+
+        <TextView
+            android:id="@+id/type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text_view"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:text="ALBUM" />
+
+        <TextView
+            android:id="@+id/year_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type_text_view"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:text="2021" />
+
+        <TextView
+            android:id="@+id/genre_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year_text_view"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:text="GATUNEK" />
+
+        <TextView
+            android:id="@+id/review_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genre_text_view"
+            android:padding="16dp"
+            android:text="@string/lorem_ipsum" />
+        <TextView
+            android:id="@+id/account_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_text_view"
+            android:padding="16dp"
+            android:textSize="20dp"
+            android:text="KONTO" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_delete"
+            android:onClick="deleteReview" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/delete_fab"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_edit"
+            android:onClick="editReview" />
+
+        <TextView
+            android:id="@+id/go_to_account_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/r_account_fab"
+            android:padding="16dp"
+            android:text="TO KONTO"
+            android:textSize="20dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/r_account_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_account"
+            android:onClick="rGoToAccount" />
+    </RelativeLayout>
+</ScrollView>

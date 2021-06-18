@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MusicReviewer2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gold_light</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/main</item>
+        <item name="android:colorBackground">@color/main</item>
+        <item name="android:textColor">@color/beige_light</item>
+        <item name="android:editTextColor">@color/beige_light</item>
+        <item name="android:textColorHint">@color/beige_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/beige_light</item>
+        <item name="colorSecondaryVariant">@color/beige_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
